@@ -1,1 +1,214 @@
-/* Desenvolva sua estilização aqui ... */
+.main__section--musical-genre{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.main__section--musical-genre > h2{
+    font-size: var(--font-2);
+    color: var(--color-grey-0);
+}
+
+.musical-genre__buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.musical-genre__buttons > label{
+    display: flex;
+    align-items: center;
+
+    height: 32px;
+    padding: 0 12px;
+
+    font-size: var(--font-3);
+
+    border-radius: var(--radius-1);
+
+    background-color: var(--color-grey-7);
+    color: var(--color-grey-1);
+}
+
+.musical-genre__buttons > label:hover{
+    background-color: var(--color-grey-6);
+    cursor: pointer;
+}
+
+.musical-genre__buttons > input[type='radio']:checked + label{
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-8);
+}
+
+.main__section--musical-price{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.musical-price__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.musical-price__header > h2{
+    font-size: var(--font-2);
+    color: var(--color-grey-0);
+}
+
+.musical-price__header > p{
+    font-size: var(--font-2);
+    color: var(--color-grey-0);
+}
+
+.main__section--content-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main__section--content-list > h2{
+    font-size: var(--font-2);
+    color: var(--color-grey-0);
+}
+
+.disc-list__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 auto;
+}
+
+.disc{
+    width: 308px;
+    height: 259px;
+    border-radius: 5px;
+
+    background-color: var(--color-grey-7);
+
+    overflow: hidden;
+}
+
+.img{
+    height: 113px;
+    width: 308px;
+}
+
+.img > img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out; 
+    object-fit: cover;
+}
+
+.disc:hover > .img > img{
+    transform: scale(1.2);
+}
+
+.disc:hover > .disc-info{
+    background-color: var(--color-grey-7);
+}
+
+
+.disc-info{
+    height: 146px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 15px;
+    
+    position: relative;
+    
+    background-color: var(--color-grey-8);
+}
+
+.band{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.band > h3{
+    font-size: var(--font-3);
+    color: var(--color-grey-3);
+}
+
+.band > p{
+    font-size: var(--font-3);
+    color: var(--color-grey-3);
+}
+
+.disc-info > h2{
+    font-size: var(--font-2);
+    color: var(--color-grey-0);
+}
+
+.disc-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.disc-price > p{
+    font-size: var(--font-2);
+    color: var(--color-grey-0);
+}
+
+.disc-price > button{
+    width: 75px;
+    height: 32px;
+    padding: auto;
+    
+    border-radius: var(--radius-1);
+
+    background-color: var(--color-grey-7);
+    color: var(--color-grey-0);
+    
+    font-size: var(--font-2);
+}
+
+.disc-price > button:hover{
+    background-color: var(--color-grey-2);
+    color: var(--color-white-fixed);
+    cursor: pointer;
+}
+
+.not-found-products{
+    display: flex;
+    justify-content: center;
+
+    color: var(--color-grey-0);
+    font-size: var(--font-2);
+}
+
+.input-range{
+    appearance: none;
+    outline: none;
+
+    width: 100%;
+    height: 10px;
+
+    border-radius: 10px;
+    background-color: var(--color-brand-1);
+}
+
+.input-range::-webkit-slider-thumb{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    border: 6px solid #3f048c;
+
+    background-color: var(--color-white-fixed);
+    cursor: pointer;
+}

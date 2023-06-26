@@ -9,8 +9,133 @@
     <title>Open Music</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <h1>open music</h1>
+
+      <button class="mode__controller">
+        <img src="./src/assets/img/moon.svg" alt="">
+      </button>
+
+    </header>
+
+    <main class="container">
+      <section class="main__section--musical-genre">
+        <h2>Gênero Musical</h2>
+        
+        <div class="musical-genre__buttons">
+          <input checked hidden type="radio" name="categoryfilter" id="todos" value="0">
+          <label for="todos">Todos</label>
+          <input hidden type="radio" name="categoryfilter" id="pop" value="1">
+          <label for="pop">Pop</label>
+          <input hidden type="radio" name="categoryfilter" id="mp3" value="2">
+          <label for="mp3">Mp3</label>
+          <input hidden type="radio" name="categoryfilter" id="forro" value="3">
+          <label for="forro">Forró</label>
+          <input hidden type="radio" name="categoryfilter" id="samba" value="4">
+          <label for="samba">Samba</label>
+          <input hidden type="radio" name="categoryfilter" id="baiao" value="5">
+          <label for="baiao">Baião</label>
+          <input hidden type="radio" name="categoryfilter" id="rap" value="6">
+          <label for="rap">Rap</label>
+          <input hidden type="radio" name="categoryfilter" id="hiphop" value="7">
+          <label for="hiphop">Hip-Hop</label>
+          <input hidden type="radio" name="categoryfilter" id="rock" value="8">
+          <label for="rock">Rock</label>
+          <input hidden type="radio" name="categoryfilter" id="reggae" value="9">
+          <label for="reggae">Reggae</label>
+          <input hidden type="radio" name="categoryfilter" id="country" value="10">
+          <label for="country">Country</label>
+          <input hidden type="radio" name="categoryfilter" id="gospel" value="11">
+          <label for="gospel">Gospel</label>
+        </div>
+      </section>
+
+      <section class="main__section--musical-price">
+        <div class="musical-price__header">
+          <h2>Definir Preço</h2>
+          <p>Até R$ 12,00</p>
+        </div>
+
+        <input class="input-range" id="range" type="range" name="range" min="12" max="99" step="1" value="0">
+      </section>
+
+      <section class="main__section--content-list">
+        <h2>Albuns Encontrados</h2>
+
+        <div class="content-list__div">
+          <ul class="disc-list__container">
+            
+            <li class="disc">
+
+              <div class="img">
+                <img src="./src/assets/img/1.jpg" alt="">
+              </div>
+
+              <div class="disc-info">
+
+                <div class="band">
+                  <h3>Scalene</h3>
+                  <p>2017</p>
+                </div>
+
+                <h2>Magnetite</h2>
+
+                <div class="disc-price">
+                  <p>R$ 70,00</p>
+                  <button>Comprar</button>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="disc">
+
+              <div class="img">
+                <img src="./src/assets/img/2.jpg" alt="">
+              </div>
+
+              <div class="disc-info">
+
+                <div class="band">
+                  <h3>Novos Baianos</h3>
+                  <p>1972</p>
+                </div>
+
+                <h2>Magnetite</h2>
+
+                <div class="disc-price">
+                  <p>R$ 100,00</p>
+                  <button>Comprar</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="disc">
+
+              <div class="img">
+                <img src="./src/assets/img/3.jpg" alt="">
+              </div>
+
+              <div class="disc-info">
+
+                <div class="band">
+                  <h3>Novos Baianos</h3>
+                  <p>1972</p>
+                </div>
+
+                <h2>Magnetite</h2>
+
+                <div class="disc-price">
+                  <p>R$ 100,00</p>
+                  <button>Comprar</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
     <script src="./src/scripts/theme.js"></script>
     <script src="./src/scripts/productsData.js"></script>
     <script src="./src/scripts/index.js"></script>
